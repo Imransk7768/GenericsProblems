@@ -8,12 +8,16 @@ namespace GenericsProblems
 {
     public class PrintArray
     {
-        public void ToPrint<T>(T[] arr)
+        int index;
+        public void MaxInteger(int[] arr)
         {
-            foreach (var data in arr)
-            {
-                Console.WriteLine(data);
-            }
+            int max = arr[0];
+            for (index = 1; index < arr.Length; index++)
+                if (arr[index] > max)
+                {
+                    max = arr[index];
+                }
+            Console.WriteLine("Maximum Integer Value in Array is : " + max);
         }
     }
 }
