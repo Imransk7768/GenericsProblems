@@ -19,5 +19,15 @@ namespace GenericsProblems
                 }
             Console.WriteLine("Maximum Integer Value in Array is : " + max);
         }
+        public void MaxDouble(double[] arrd)
+        {
+            double maxd = arrd[0];
+            for (index = 1; index < arrd.Length; index++)
+                if (arrd[index] > maxd)
+                {
+                    maxd = arrd[index];
+                }
+            Console.WriteLine("Maximum Double Value in Array is : " + maxd);
+        }
     }
 }
