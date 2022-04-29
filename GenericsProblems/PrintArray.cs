@@ -28,6 +28,15 @@ namespace GenericsProblems
                     maxd = arrd[index];
                 }
             Console.WriteLine("Maximum Double Value in Array is : " + maxd);
+        }public void MaxChar(char[] arrd)
+        {
+            double maxc = arrd[0];
+            for (index = 1; index < arrd.Length; index++)
+                if (arrd[index] > maxc)
+                {
+                    maxc = arrd[index];
+                }
+            Console.WriteLine("Maximum Char Value in Array is : " + maxc);
         }
     }
 }

@@ -10,9 +10,11 @@ namespace GenericsProblems
         {
             int[] arr = { 50, 42, 543, 545, 21, 43, 90 };
             double[] doubleArr = { 1.2, 2.3, 3.4, 4.5, 5.6 };
-            PrintArray intArray = new PrintArray();
-            intArray.MaxInteger(arr);
-            intArray.MaxDouble(doubleArr);
+            char[] charArr = { 'a', 'b', 'c', 'd', 'e', 'f' };
+            PrintArray array = new PrintArray();
+            array.MaxInteger(arr);
+            array.MaxDouble(doubleArr);
+            array.MaxChar(charArr);
         }
     }
 }
